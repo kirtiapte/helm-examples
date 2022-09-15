@@ -36,6 +36,8 @@ I want to replicate helm charts from source harbor to destination harbor.
 
 ![Destination registry endpoint](images/replication7.png)
 
+* Congratulations! you have successfully replicated the helm charts from a source harbor to destination harbor!
+
 
 
 
