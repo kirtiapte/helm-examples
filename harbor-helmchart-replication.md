@@ -22,7 +22,8 @@ I want to replicate helm charts from source harbor to destination harbor.
 
 ![Destination registry endpoint](images/replication4.png)
 
-* 
+* Create a replication rule in the source harbor as shown below using Replication->New Repliction Rule.  Source repository filter is your helm chart project/**
+
 
 
 
