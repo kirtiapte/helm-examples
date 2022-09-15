@@ -1,3 +1,3 @@
 # helm-examples
 
-This reporsitory conists of helm example.
+This reporsitory consists of helm example.
