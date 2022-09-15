@@ -22,7 +22,19 @@ I want to replicate helm charts from source harbor to destination harbor.
 
 ![Destination registry endpoint](images/replication4.png)
 
-* Create a replication rule in the source harbor as shown below using Replication->New Repliction Rule.  Source repository filter is your helm chart project/**
+* Create a replication rule in the source harbor as shown below using Replication->New Repliction Rule.  Source repository filter is your helm chart project/**.
+* Destination registry is the registry you have created in the above step
+
+![Destination registry endpoint](images/replication5.png)
+
+* Once the replication rule is created start the replication from source harbor to destination harbor.  You should see a progress and status of the replication
+
+![Destination registry endpoint](images/replication6.png)
+
+
+* Go to destination harbor and verify the project and helm charts are present
+
+![Destination registry endpoint](images/replication7.png)
 
 
 
