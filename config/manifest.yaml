@@ -1,0 +1,22 @@
+apiVersion: serving.knative.dev/v1
+kind: Service
+metadata:
+  name: gitwriter-sc
+  labels:
+    app.kubernetes.io/part-of: hello-world
+    carto.run/workload-name: gitwriter-sc
+    app.kubernetes.io/component: run
+spec:
+  template:
+    metadata:
+      annotations:
+        autoscaling.knative.dev/minScale: "1"
+    spec:
+      containers:
+      - name: workload
+        image: harbor.fbclouddemo.us/tap-packages/example-gitwriter-sc-gitwriter-sc@sha256:35970f18938fd97b83e01f85c45f953239730f23b583c488cbe27dd5c61c6e4b
+        securityContext:
+          runAsUser: 1000
+      imagePullSecrets:
+      - name: registry-credentials
+
