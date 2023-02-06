@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: workload
-        image: harbor.fbclouddemo.us/tap-packages/example-gitwriter-sc-gitwriter-sc@sha256:35970f18938fd97b83e01f85c45f953239730f23b583c488cbe27dd5c61c6e4b
+        image: harbor.fbclouddemo.us/tap-packages/example-gitwriter-sc-gitwriter-sc@sha256:cc2382f9e3d8bf1a23810965f467406332dd850f47f38cdce6dccb6c9426f70b
         securityContext:
           runAsUser: 1000
       imagePullSecrets:
